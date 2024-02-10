@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}<br>
+
+{% load static %}
+
+{%  block body %}
+     <title>Hotel Management Review System</title>
+     
+    <style>
+
+h1{
+    color: green;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+p{
+    font-family: Arial;
+}
+</style>
+<html>
+<head>
+	<title>Hotel Management Review System</title>
+</head>
+<div class="container">
+    <div class="jumbotron">
+        <h1><em>Hotel Management Review System</em></h1><br><br><br><br>
+<body>
+
+<form action = "" method="POST">
+    {% csrf_token %}
+
+<table align="center">
+
+            <tr>
+                <td><h1>Name</h1></td>
+                <td><h1>:</h1></td>
+                <td><h1><input type="text" name="num1"></h1></td>
+            </tr>
+
+            <tr>
+                <td><h1>Email</h1></td>
+                <td><h1>:</h1></td>
+                <td><h1><input type="text" name="email"></h1></td>
+            </tr>
+
+            <tr>
+                <td><h1>Hotel</h1></td>
+                <td><h1>:</h1></td>
+                <td><h1><input type="text" name="num2"></h1></td>
+            </tr>
+
+            <tr>
+                <td><h1>review</h1></td>
+                <td><h1>:</h1></td>
+                <td><textarea name = "text" rows="5" cols="50"></textarea></td>
+            </tr>
+           <tr>
+               <td>
+                   <td><button type="submit_tweet" class="btn btn-primary">Predict</button></td>
+                   <br>
+                   <br>
+                   <br>
+               </td>
+           </tr>
+          
+</table>
+</form>
+</body>
+    </div>
+</div>
+</html>
+
+
+{% endblock %}

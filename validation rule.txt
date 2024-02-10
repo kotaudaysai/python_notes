@@ -1,0 +1,7 @@
+ISPICKVAL( Status__c , 'active') &&
+ISPICKVAL( Rating ,'Hot')&&
+ ISPICKVAL( Rating ,'Warm')&&
+ ISPICKVAL( Rating ,'Cold')))
+&&OR(NOT(ISPICKVAL( Rating ,'Hot')),
+ (ISPICKVAL( Rating ,'Warm')),
+ (ISPICKVAL( Rating ,'Cold')))
